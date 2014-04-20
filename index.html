@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spanner</title>
+  <meta name="viewport" content="height=device-height, width=device-width, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="gyro.js"></script>
+    <script src="index.js"></script>
+    <style>
+      button {
+        height: 48px;
+        width: 40%;
+        display: inline; 
+      }
+
+      p {
+        font-weight: bold;
+        color: #ccc;
+      }
+
+      p#dist {
+        color: #666;
+      }
+
+    </style>
+  </head>
+  <body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <br />
+    <table>
+      <tr>
+        <td> dist </td>
+        <td id="dist"></td>
+        <td> vel </td>
+        <td id="vel"></td>
+      </tr>
+      <tr>
+        <td> X </td>
+        <td id="x_axis" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td> Y </td>
+      <td id="y_axis" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td> Z </td>
+        <td id="z_axis" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td> alpha </td>
+        <td id="alpha" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td> beta </td>
+        <td id="beta" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td> gamma </td>
+        <td id="gamma" colspan="3"></td>
+      </tr>
+    </table>
+    <p id="stack"></p>
+  </body>
+</html>
